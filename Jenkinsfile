@@ -6,6 +6,8 @@ pipeline {
         stage('Docker Image Build') {
             steps {
                 echo 'Building..'
+                sh 'uname -a'
+                sh 'whoami'
                 sh 'docker build -t luke4egg/phase3:latest .'
             }
         }
