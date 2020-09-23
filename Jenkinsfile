@@ -6,7 +6,7 @@ pipeline {
         stage('Docker Image Build') {
             steps {
                 echo 'Building..'
-                sh 'docker build -t luke4egg/phase3:latest ."
+                sh 'docker build -t luke4egg/phase3:latest .'
             }
         }
         stage('Test') {
