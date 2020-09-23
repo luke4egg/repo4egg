@@ -8,6 +8,7 @@ pipeline {
                 echo 'Building..'
                 sh 'uname -a'
                 sh 'whoami'
+                sh 'usermod -aG docker jenkins' 
                 sh 'docker build -t luke4egg/phase3:latest .'
             }
         }
