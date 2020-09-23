@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Requested listing</title>
+  </head>
+  <body>
+    <h1>This is your requested listing </h1>
+    <h4>use full path in the input below </h4>
+    <h4> </h4>
+
+    <form method="POST" action="/" >
+       <label>Enter directory path: </label>
+       <input value="{{ directory }}" name="directory" />
+    </form>
+
+    {{ filesfound }}
+
+  </body>
+
+
+</html>
